@@ -1,0 +1,1011 @@
+## 1. productManageClass --- 吴松
+
+### 1.1 功能描述
+
+商品管理--分类
+
+### 1.2 请求说明
+
+> 请求方式：POST
+
+> 请求URL：FlagShip/productManageClass? 调试参数:{"method":"FlagShip.productManageClass","username":"13608057568","check_code":"123456","keywords":"1","cate_type":"","page":"1","pagesize":"10","source":"1"}
+
+### 1.3 请求参数
+
+| 参数 | 是否必须 | 类型 | 说明 |
+|--------| --------| --------|--------|
+| sort | 否 | int | 排序字段(1进价由高到低排序、2进价由低到高排序、3售价从高到低排序、4售价从低到高排序、5利润从高到低排序、6、利润从低到高排序)|
+| type | 否 | int | 商品所属类型(2特色商品、1平台商品)|
+| source | 是 | int | 来源(1--h5、2--app)|
+| keywords | 否 | string | 搜索字段(商品名称)|
+| cate_type | 否 | int | 商品所属分类|
+| page | 否 | int | 页码(不传默认1)|
+| pagesize | 否 | int | 每页显示条数(不传默认10)|
+### 1.4 返回结果
+
+```json
+
+{
+	"status":"0",
+	"errorCode":"0",
+	"msg":"成功",
+	"result":{
+		"list":{
+			"goods_info":[{
+				"properties":"1,
+				95",
+				"product_id":"FP652171",
+				"sku_no":"FP652171-1",
+				"soft_text":null,
+				"search_name":null,
+				"seascapes":["http://img.test.feelee.cc//Public/Uploads/server/billboard/20180426/2b41fc9b-d4f5-4b58-bb63-cc37d614d384.jpg"],
+				"img":"http://img.test.feelee.cc//Public/Uploads/server/detail/20180426/36cd7513-c6d9-4227-807a-6c08d6320eae.jpg",
+				"is_zero_goods":"0",
+				"restriction":null,
+				"sell_nums":"0",
+				"sku_id":"8042618134",
+				"yuding":"1",
+				"title":"爱疯X",
+				"market_price":null,
+				"sell_price":"8888.00",
+				"cost_price":"4499.00",
+				"profit":"4389.00",
+				"spec_name":": : ",
+				"store_id":"115176452561015",
+				"activity_info":{
+					"productPrice":"00.00",
+					"costPrice":"00.00",
+					"activityId":null,
+					"activityType":null,
+					"title":null,
+					"isAct":false,
+					"act_profit":0
+				}
+			},
+			{
+				"properties":"2,
+				95",
+				"product_id":"FP652171",
+				"sku_no":"FP652171-2",
+				"soft_text":null,
+				"search_name":null,
+				"seascapes":["http://img.test.feelee.cc//Public/Uploads/server/billboard/20180426/2b41fc9b-d4f5-4b58-bb63-cc37d614d384.jpg"],
+				"img":"http://img.test.feelee.cc//Public/Uploads/server/detail/20180426/5144cbdf-a36a-4dac-b920-a3c81d283d89.jpg",
+				"is_zero_goods":"0",
+				"restriction":null,
+				"sell_nums":"0",
+				"sku_id":"8042618135",
+				"yuding":"1",
+				"title":"爱疯X",
+				"market_price":null,
+				"sell_price":"8888.00",
+				"cost_price":"4499.00",
+				"profit":"4389.00",
+				"spec_name":": : ",
+				"store_id":"115176452561015",
+				"activity_info":{
+					"productPrice":"00.00",
+					"costPrice":"00.00",
+					"activityId":null,
+					"activityType":null,
+					"title":null,
+					"isAct":false,
+					"act_profit":0
+				}
+			},
+			{
+				"properties":"3,
+				94",
+				"product_id":"FP461903",
+				"sku_no":"FP461903-1",
+				"soft_text":null,
+				"search_name":null,
+				"seascapes":["http://img.test.feelee.cc//Public/Uploads/server/billboard/20180426/797ad739-6c55-43c5-a284-aac922f770f7.jpg"],
+				"img":"http://img.test.feelee.cc//Public/Uploads/server/detail/20180426/b71e8b71-3a4c-4051-a4ef-5475cfa389b2.jpg",
+				"is_zero_goods":"0",
+				"restriction":null,
+				"sell_nums":"0",
+				"sku_id":"8042610850",
+				"yuding":"1",
+				"title":"中兴",
+				"market_price":null,
+				"sell_price":"2999.00",
+				"cost_price":"2000.00",
+				"profit":"999.00",
+				"spec_name":": : ",
+				"store_id":"115176452561015",
+				"activity_info":{
+					"productPrice":"00.00",
+					"costPrice":"00.00",
+					"activityId":null,
+					"activityType":null,
+					"title":null,
+					"isAct":false,
+					"act_profit":0
+				}
+			},
+			{
+				"properties":"3,
+				95",
+				"product_id":"FP461903",
+				"sku_no":"FP461903-2",
+				"soft_text":null,
+				"search_name":null,
+				"seascapes":["http://img.test.feelee.cc//Public/Uploads/server/billboard/20180426/797ad739-6c55-43c5-a284-aac922f770f7.jpg"],
+				"img":"http://img.test.feelee.cc//Public/Uploads/server/detail/20180426/cd533a89-12bc-421a-a7ec-a5b0aaef3960.jpg",
+				"is_zero_goods":"0",
+				"restriction":null,
+				"sell_nums":"0",
+				"sku_id":"8042610851",
+				"yuding":"1",
+				"title":"中兴",
+				"market_price":null,
+				"sell_price":"2999.00",
+				"cost_price":"2000.00",
+				"profit":"999.00",
+				"spec_name":": : ",
+				"store_id":"115176452561015",
+				"activity_info":{
+					"productPrice":"00.00",
+					"costPrice":"00.00",
+					"activityId":null,
+					"activityType":null,
+					"title":null,
+					"isAct":false,
+					"act_profit":0
+				}
+			},
+			{
+				"properties":"1,
+				94",
+				"product_id":"FP461903",
+				"sku_no":"FP461903-3",
+				"soft_text":null,
+				"search_name":null,
+				"seascapes":["http://img.test.feelee.cc//Public/Uploads/server/billboard/20180426/797ad739-6c55-43c5-a284-aac922f770f7.jpg"],
+				"img":"http://img.test.feelee.cc//Public/Uploads/server/detail/20180426/e048f432-2990-47a3-a601-283fb4233903.jpg",
+				"is_zero_goods":"0",
+				"restriction":null,
+				"sell_nums":"0",
+				"sku_id":"8042610852",
+				"yuding":"1",
+				"title":"中兴",
+				"market_price":null,
+				"sell_price":"2999.00",
+				"cost_price":"2000.00",
+				"profit":"999.00",
+				"spec_name":": : ",
+				"store_id":"115176452561015",
+				"activity_info":{
+					"productPrice":"00.00",
+					"costPrice":"00.00",
+					"activityId":null,
+					"activityType":null,
+					"title":null,
+					"isAct":false,
+					"act_profit":0
+				}
+			},
+			{
+				"properties":"1,
+				95",
+				"product_id":"FP461903",
+				"sku_no":"FP461903-4",
+				"soft_text":null,
+				"search_name":null,
+				"seascapes":["http://img.test.feelee.cc//Public/Uploads/server/billboard/20180426/797ad739-6c55-43c5-a284-aac922f770f7.jpg"],
+				"img":"http://img.test.feelee.cc//Public/Uploads/server/detail/20180426/cf254c2e-4dbb-4f8f-8e33-65e29f277253.jpg",
+				"is_zero_goods":"0",
+				"restriction":null,
+				"sell_nums":"0",
+				"sku_id":"8042610853",
+				"yuding":"1",
+				"title":"中兴",
+				"market_price":null,
+				"sell_price":"2999.00",
+				"cost_price":"2000.00",
+				"profit":"999.00",
+				"spec_name":": : ",
+				"store_id":"115176452561015",
+				"activity_info":{
+					"productPrice":"00.00",
+					"costPrice":"00.00",
+					"activityId":null,
+					"activityType":null,
+					"title":null,
+					"isAct":false,
+					"act_profit":0
+				}
+			},
+			{
+				"properties":"2",
+				"product_id":"FP576836",
+				"sku_no":"FP576836-1",
+				"soft_text":null,
+				"search_name":null,
+				"seascapes":["http://img.test.feelee.cc//Public/Uploads/server/billboard/20180426/88a06a3d-444a-4ff9-a5c2-dac6e2fe57f7.jpg"],
+				"img":"http://img.test.feelee.cc//Public/Uploads/server/detail/20180426/6d59cb73-1be8-4d09-801c-1b5423973c96.jpg",
+				"is_zero_goods":"0",
+				"restriction":null,
+				"sell_nums":"0",
+				"sku_id":"8042614640",
+				"yuding":"1",
+				"title":"NOKIA N97",
+				"market_price":null,
+				"sell_price":"2500.00",
+				"cost_price":"1800.00",
+				"profit":"700.00",
+				"spec_name":": ",
+				"store_id":"115176452561015",
+				"activity_info":{
+					"productPrice":"00.00",
+					"costPrice":"00.00",
+					"activityId":null,
+					"activityType":null,
+					"title":null,
+					"isAct":false,
+					"act_profit":0
+				}
+			}],
+			"foot":{
+				"current_page":"1",
+				"pagesize":"10",
+				"total_page":1
+			}
+		},
+		"cate_info":[{
+			"id":0,
+			"name":"全部分类",
+			"sort":10000000,
+			"path":0,
+			"list_status":2,
+			"child":null
+		},
+		{
+			"id":"2",
+			"name":"特色商品",
+			"sort":"2",
+			"path":"2",
+			"list_status":2,
+			"child":null
+		},
+		{
+			"id":"1",
+			"name":"平台商品",
+			"sort":"1",
+			"path":"1",
+			"list_status":2,
+			"child":[{
+				"id":"137",
+				"name":"bbb",
+				"sort":"137",
+				"path":"1/137",
+				"img":null,
+				"child":null
+			},
+			{
+				"id":"135",
+				"name":"qq",
+				"sort":"135",
+				"path":"1/135",
+				"img":"http://img.test.feelee.cc//Public/Uploads/server/goodcate/20180521/56d0515269096035470.png",
+				"child":[{
+					"id":"136",
+					"name":"22",
+					"sort":"136",
+					"path":"1/135/136",
+					"img":null,
+					"child":null
+				}]
+			},
+			{
+				"id":"111",
+				"name":"333",
+				"sort":"111",
+				"path":"1/111",
+				"img":"http://img.test.feelee.cc//Public/Uploads/server/goodcate/20180330/5073615223769694245.png",
+				"child":null
+			},
+			{
+				"id":"3",
+				"name":"斐讯商品",
+				"sort":"60",
+				"path":"1/3",
+				"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180109/thumb_5a544e68cd630.jpg",
+				"child":[{
+					"id":"109",
+					"name":"斐讯K3C+E1组合套装",
+					"sort":"109",
+					"path":"1/3/109",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180127/thumb_5a6c116632a50.jpg",
+					"child":null
+				},
+				{
+					"id":"108",
+					"name":"斐讯N1预售",
+					"sort":"108",
+					"path":"1/3/108",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180126/thumb_5a6af4332d384.jpeg",
+					"child":null
+				},
+				{
+					"id":"74",
+					"name":"斐讯K1S",
+					"sort":"74",
+					"path":"1/3/74",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a6084b29c0aa.jpg",
+					"child":null
+				},
+				{
+					"id":"63",
+					"name":"斐讯M1",
+					"sort":"73",
+					"path":"1/3/63",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180110/thumb_5a5604ff4abb0.jpg",
+					"child":null
+				},
+				{
+					"id":"62",
+					"name":"斐讯S7",
+					"sort":"72",
+					"path":"1/3/62",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180110/thumb_5a56100d49583.png",
+					"child":null
+				},
+				{
+					"id":"73",
+					"name":"斐讯K2mini",
+					"sort":"71",
+					"path":"1/3/73",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180117/thumb_5a5eab214942e.jpg",
+					"child":null
+				},
+				{
+					"id":"72",
+					"name":"斐讯 E1",
+					"sort":"70",
+					"path":"1/3/72",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180117/thumb_5a5eab29339fc.jpg",
+					"child":null
+				},
+				{
+					"id":"67",
+					"name":"斐讯K2",
+					"sort":"69",
+					"path":"1/3/67",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180117/thumb_5a5eab3190628.jpg",
+					"child":null
+				},
+				{
+					"id":"71",
+					"name":"斐讯K2P",
+					"sort":"68",
+					"path":"1/3/71",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180117/thumb_5a5eab3f31e9b.jpg",
+					"child":null
+				},
+				{
+					"id":"68",
+					"name":"斐讯K2C",
+					"sort":"67",
+					"path":"1/3/68",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180117/thumb_5a5eab46cbcdb.JPG",
+					"child":null
+				},
+				{
+					"id":"61",
+					"name":"路由器",
+					"sort":"63",
+					"path":"1/3/61",
+					"img":null,
+					"child":null
+				},
+				{
+					"id":"69",
+					"name":"斐讯K3",
+					"sort":"62",
+					"path":"1/3/69",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180117/thumb_5a5eab4eca5b7.jpg",
+					"child":null
+				},
+				{
+					"id":"70",
+					"name":"斐讯K3C",
+					"sort":"61",
+					"path":"1/3/70",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180117/thumb_5a5eab55d910e.jpg",
+					"child":null
+				}]
+			},
+			{
+				"id":"4",
+				"name":"热推爆品",
+				"sort":"43",
+				"path":"1/4",
+				"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180109/thumb_5a544e360cfac.jpg",
+				"child":null
+			},
+			{
+				"id":"40",
+				"name":"美妆个护",
+				"sort":"42",
+				"path":"1/40",
+				"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180109/thumb_5a544d22c52a6.jpg",
+				"child":[{
+					"id":"45",
+					"name":"面部护肤",
+					"sort":"89",
+					"path":"1/40/45",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180119/thumb_5a61b82e3a33b.jpg",
+					"child":null
+				},
+				{
+					"id":"88",
+					"name":"皮肤护理",
+					"sort":"88",
+					"path":"1/40/88",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180119/thumb_5a61274b149d3.png",
+					"child":null
+				},
+				{
+					"id":"85",
+					"name":"面膜",
+					"sort":"87",
+					"path":"1/40/85",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180119/thumb_5a61b821d335c.jpg",
+					"child":null
+				},
+				{
+					"id":"56",
+					"name":"彩妆",
+					"sort":"86",
+					"path":"1/40/56",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60a80ab4f35.jpg",
+					"child":null
+				},
+				{
+					"id":"89",
+					"name":"卸妆",
+					"sort":"85",
+					"path":"1/40/89",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60a8155a23c.jpg",
+					"child":null
+				},
+				{
+					"id":"86",
+					"name":"造型",
+					"sort":"84",
+					"path":"1/40/86",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60a1f3d0c1d.jpg",
+					"child":null
+				},
+				{
+					"id":"44",
+					"name":"洗发",
+					"sort":"58",
+					"path":"1/40/44",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60a65805294.jpg",
+					"child":[{
+						"id":"46",
+						"name":"面膜",
+						"sort":"46",
+						"path":"1/40/44/46",
+						"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180119/thumb_5a61b82e3a33b.jpg"
+					}]
+				},
+				{
+					"id":"87",
+					"name":"护发",
+					"sort":"57",
+					"path":"1/40/87",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180119/thumb_5a61b9af1907c.jpg",
+					"child":null
+				},
+				{
+					"id":"84",
+					"name":"染发",
+					"sort":"56",
+					"path":"1/40/84",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a609e4d93237.jpg",
+					"child":null
+				},
+				{
+					"id":"55",
+					"name":"沐浴",
+					"sort":"55",
+					"path":"1/40/55",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180109/thumb_5a544d9857c69.jpg",
+					"child":null
+				},
+				{
+					"id":"57",
+					"name":"口腔护理",
+					"sort":"45",
+					"path":"1/40/57",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60a1b4712a0.jpg",
+					"child":null
+				},
+				{
+					"id":"58",
+					"name":"女性护理",
+					"sort":"44",
+					"path":"1/40/58",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180109/thumb_5a544da6c7a0b.jpg",
+					"child":null
+				}]
+			},
+			{
+				"id":"41",
+				"name":"母婴用品",
+				"sort":"41",
+				"path":"1/41",
+				"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180109/thumb_5a544f09afb2b.jpg",
+				"child":[{
+					"id":"90",
+					"name":"牙刷/牙膏",
+					"sort":"90",
+					"path":"1/41/90",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60a73dcc5f1.jpg",
+					"child":null
+				},
+				{
+					"id":"83",
+					"name":"牙胶安抚",
+					"sort":"83",
+					"path":"1/41/83",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a608e1c23bbe.jpg",
+					"child":null
+				},
+				{
+					"id":"82",
+					"name":"洗发沐浴",
+					"sort":"82",
+					"path":"1/41/82",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a608f2ba41a7.jpg",
+					"child":null
+				},
+				{
+					"id":"78",
+					"name":"幼儿清洁",
+					"sort":"81",
+					"path":"1/41/78",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a608c73bb913.jpg",
+					"child":null
+				},
+				{
+					"id":"81",
+					"name":"幼儿餐具",
+					"sort":"80",
+					"path":"1/41/81",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a608bd269508.jpg",
+					"child":null
+				},
+				{
+					"id":"80",
+					"name":"尿布/湿巾",
+					"sort":"79",
+					"path":"1/41/80",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a6089fdb5756.jpg",
+					"child":null
+				},
+				{
+					"id":"75",
+					"name":"奶瓶/水杯",
+					"sort":"78",
+					"path":"1/41/75",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60892f2518a.jpg",
+					"child":null
+				},
+				{
+					"id":"76",
+					"name":"奶嘴/清洁",
+					"sort":"76",
+					"path":"1/41/76",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a6089986fa4b.jpg",
+					"child":null
+				},
+				{
+					"id":"79",
+					"name":"幼儿护肤",
+					"sort":"75",
+					"path":"1/41/79",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a608b8d1a367.jpg",
+					"child":null
+				},
+				{
+					"id":"47",
+					"name":"孕产用品",
+					"sort":"48",
+					"path":"1/41/47",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180111/thumb_5a572c1942e20.jpg",
+					"child":null
+				},
+				{
+					"id":"48",
+					"name":"防护/其他",
+					"sort":"47",
+					"path":"1/41/48",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a6089e8a299b.jpg",
+					"child":null
+				}]
+			},
+			{
+				"id":"42",
+				"name":"居家百货",
+				"sort":"40",
+				"path":"1/42",
+				"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180109/thumb_5a544fb000122.jpg",
+				"child":[{
+					"id":"107",
+					"name":"生活电器",
+					"sort":"107",
+					"path":"1/42/107",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180122/thumb_5a65600d573b7.jpg",
+					"child":null
+				},
+				{
+					"id":"94",
+					"name":"厨房用具",
+					"sort":"97",
+					"path":"1/42/94",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180122/thumb_5a656013846b7.jpg",
+					"child":null
+				},
+				{
+					"id":"49",
+					"name":"滤水壶",
+					"sort":"96",
+					"path":"1/42/49",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60ab0185e71.jpg",
+					"child":null
+				},
+				{
+					"id":"51",
+					"name":"杯子",
+					"sort":"95",
+					"path":"1/42/51",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180109/thumb_5a544f9fe5b62.jpg",
+					"child":null
+				},
+				{
+					"id":"93",
+					"name":"口罩",
+					"sort":"94",
+					"path":"1/42/93",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60ae5588f93.jpg",
+					"child":null
+				},
+				{
+					"id":"97",
+					"name":"便利贴",
+					"sort":"93",
+					"path":"1/42/97",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60b0a81a056.jpg",
+					"child":null
+				},
+				{
+					"id":"96",
+					"name":"创可贴",
+					"sort":"92",
+					"path":"1/42/96",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60b0a2e4cfe.jpg",
+					"child":null
+				},
+				{
+					"id":"95",
+					"name":"挂钩",
+					"sort":"91",
+					"path":"1/42/95",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60b09d1ce3b.jpg",
+					"child":null
+				},
+				{
+					"id":"59",
+					"name":"汽车香水",
+					"sort":"51",
+					"path":"1/42/59",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60ab7d74b0a.jpg",
+					"child":null
+				},
+				{
+					"id":"92",
+					"name":"清洁工具",
+					"sort":"50",
+					"path":"1/42/92",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60add1ea5ae.jpg",
+					"child":null
+				},
+				{
+					"id":"106",
+					"name":"洗衣用品",
+					"sort":"49",
+					"path":"1/42/106",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60b9fee32f2.jpg",
+					"child":null
+				}]
+			},
+			{
+				"id":"43",
+				"name":"数码外设",
+				"sort":"4",
+				"path":"1/43",
+				"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180109/thumb_5a54500c674dd.jpg",
+				"child":[{
+					"id":"54",
+					"name":"音响/耳机",
+					"sort":"105",
+					"path":"1/43/54",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60b32458396.jpg",
+					"child":null
+				},
+				{
+					"id":"98",
+					"name":"插座",
+					"sort":"104",
+					"path":"1/43/98",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60b3487a154.jpg",
+					"child":null
+				},
+				{
+					"id":"99",
+					"name":"键盘/鼠标",
+					"sort":"103",
+					"path":"1/43/99",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60b316a866b.jpg",
+					"child":null
+				},
+				{
+					"id":"52",
+					"name":"Type-C数据线",
+					"sort":"102",
+					"path":"1/43/52",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180109/thumb_5a54501dcbc93.jpg",
+					"child":null
+				},
+				{
+					"id":"101",
+					"name":"HDMIi高清线",
+					"sort":"101",
+					"path":"1/43/101",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60b58d5232d.jpg",
+					"child":null
+				},
+				{
+					"id":"100",
+					"name":"摄像头/麦克",
+					"sort":"100",
+					"path":"1/43/100",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60b31c22cfd.jpg",
+					"child":null
+				},
+				{
+					"id":"104",
+					"name":"音频线",
+					"sort":"99",
+					"path":"1/43/104",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60b83c92770.jpg",
+					"child":null
+				},
+				{
+					"id":"105",
+					"name":"手机壳",
+					"sort":"98",
+					"path":"1/43/105",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60b9ae2cd8b.jpg",
+					"child":null
+				},
+				{
+					"id":"103",
+					"name":"网线转接器",
+					"sort":"54",
+					"path":"1/43/103",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60b8fd43825.jpg",
+					"child":null
+				},
+				{
+					"id":"102",
+					"name":"网线",
+					"sort":"52",
+					"path":"1/43/102",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180118/thumb_5a60b7290c501.jpg",
+					"child":null
+				}]
+			},
+			{
+				"id":"60",
+				"name":"宠物生活",
+				"sort":"3",
+				"path":"1/60",
+				"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180109/thumb_5a5496b1d9b65.jpg",
+				"child":[{
+					"id":"66",
+					"name":"宠物保健",
+					"sort":"66",
+					"path":"1/60/66",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180111/thumb_5a572ce3cf29a.png",
+					"child":null
+				},
+				{
+					"id":"65",
+					"name":"爱宠用品",
+					"sort":"65",
+					"path":"1/60/65",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180110/thumb_5a5616e9232ab.jpg",
+					"child":null
+				},
+				{
+					"id":"64",
+					"name":"医疗保健",
+					"sort":"64",
+					"path":"1/60/64",
+					"img":"http://img.test.feelee.cc//Public/Uploads/product_type_img/20180110/thumb_5a560660d3efb.jpg",
+					"child":null
+				}]
+			}]
+		}],
+		"user_info":{
+			"nick":"17721355555",
+			"mobile":"17621974611"
+		},
+		"store_version":"2"
+	}
+}
+
+```
+
+### 1.5 返回参数
+
+   无
+-----------------------
+## 2. goodsCategoryClass --- 吴松
+
+### 2.1 功能描述
+
+分类
+
+### 2.2 请求说明
+
+> 请求方式：POST
+
+> 请求URL：FlagShip/goodsCategoryClass? 调试参数:{"method":"FlagShip.goodsCategoryClass","source":"1","username":"17621974611","check_code":"123456","type":"","cate_type":""}
+
+### 2.3 请求参数
+
+| 参数 | 是否必须 | 类型 | 说明 |
+|--------| --------| --------|--------|
+| source | 是 | int | 来源(1--h5、2--app)|
+| cate_type | 否 | int | 商品所属分类|
+| type | 否 | int | 商品所属类型(2特色商品、1平台商品)|
+### 2.4 返回结果
+
+   无
+
+### 2.5 返回参数
+
+   无
+-----------------------
+## 3. getGoodsSearch --- 吴松
+
+### 3.1 功能描述
+
+旗舰版---搜索
+
+### 3.2 请求说明
+
+> 请求方式：POST
+
+> 请求URL：FlagShip/getGoodsSearch? 调用参数说明:body--POST--格式:{"method":"FlagShip.getGoodsSearch","source":"1","type":"other","store_id":"","type_in":"1","sort":"1","keywords":"117082948985098","cate_type":"","brand_id":"","page":"1","pagesize":"10"}
+
+### 3.3 请求参数
+
+| 参数 | 是否必须 | 类型 | 说明 |
+|--------| --------| --------|--------|
+| type | 是 | string | 店铺类型--首页进去(other)、我的蜂店进去(me)|
+| type_in | 是 | int | 搜索入口--1首页、2分类页、3店铺装修分类|
+| store_id | 否 | string | 店铺id|
+| source | 是 | int | 来源(1--h5、2--app)|
+| sort | 否 | int | 排序字段(1销量由高到低、2价格由低到高、3价格由高到低)--不传默认1|
+| keywords | 否 | string | 搜索字段(商品名称、店铺id、店铺名称)|
+| cate_type | 否 | string | 商品所属分类--格式:13,20,24,16|
+| brand_id | 否 | string | 品牌id--格式:3,4,5,6|
+| page | 否 | int | 页码(不传默认1)|
+| pagesize | 否 | int | 每页显示条数(不传默认10)|
+### 3.4 返回结果
+
+```json
+
+{
+	"status":"0",
+	"errorCode":"0",
+	"msg":"成功",
+	"result":{
+		"store_one":null,
+		"store_goods":null,
+		"goods_goods":{
+			"goods_info":[{
+				"product_id":"P001219",
+				"brand_id":"3",
+				"search_name":"无线路由器wifi穿墙 信号放大 覆盖范围广",
+				"seascapes":["http://img.fld8.cn//Public/Uploads/server/goods/20180626/3b27615299836479583.png"],
+				"img":"http://img.fld8.cn//Public/Uploads/server/goods/20180626/2116f15299908325352.jpg",
+				"sell_nums":"66889",
+				"title":"斐讯（PHICOMM）K2 1200M智能双频无线路由器",
+				"sku_id":"1002975101",
+				"soft_text":"",
+				"is_zero_goods":"1",
+				"restriction":"50",
+				"yuding":"1",
+				"sku_no":"P001219-01",
+				"market_price":"399.00",
+				"sell_price":"399.00",
+				"cost_price":"349.00",
+				"product_num":"1",
+				"profit":"50.00",
+				"spec_name":"颜色:黄色 ",
+				"store_id":"115299755505552",
+				"activity_info":{
+					"productPrice":"00.00",
+					"costPrice":"00.00",
+					"activityId":null,
+					"activityType":null,
+					"title":null,
+					"isAct":false
+				}
+			}],
+			"foot":{
+				"current_page":"1",
+				"pagesize":"10",
+				"total_page":1
+			},
+			"brand_info":[{
+				"id":"3",
+				"brand_name":"斐讯",
+				"list_status":2
+			}],
+			"cate_info":[{
+				"id":"3",
+				"name":"斐讯商品",
+				"list_status":2
+			},
+			{
+				"id":"109",
+				"name":"斐讯K3C+E1组合套装",
+				"list_status":2
+			},
+			{
+				"id":"67",
+				"name":"斐讯K2",
+				"list_status":2
+			},
+			{
+				"id":"71",
+				"name":"斐讯K2P",
+				"list_status":2
+			},
+			{
+				"id":"69",
+				"name":"斐讯K3",
+				"list_status":2
+			},
+			{
+				"id":"46",
+				"name":"面膜",
+				"list_status":2
+			},
+			{
+				"id":"4",
+				"name":"热推爆品",
+				"list_status":2
+			}]
+		},
+		"recommend_goods":null,
+		"list_type":2
+	}
+}
+
+```
+
+### 3.5 返回参数
+
+   无
+-----------------------

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="Description">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  </style>
+</head>
+<body>
+    <div id="app"></div>
+	<script>
+		window.$docsify = {
+		    notFoundPage: '404.html',
+			auto2top: true,      //当路线改变时，滚动到屏幕的顶部。
+			coverpage: true,     //激活封面功能。如果为true，则会从中加载_coverpage.md。
+			executeScript: true, //执行页面上的脚本。只解析第一个脚本标记（演示）。如果存在Vue，则默认开启。
+			loadSidebar: true,   //_sidebar.md如果为真，则从_sidebar.md文件加载边栏，否则从指定的路径加载。
+			loadNavbar: true,    //_navbar.md如果为真，则从_navbar.md文件加载navbar ，否则从指定的路径加载。
+			mergeNavbar: true,   //Navbar将在小屏幕上与侧边栏合并。
+			maxLevel: 2,         //最大的内容表级别。
+			subMaxLevel: 0,      //在自定义边栏中添加目录（TOC）
+			name: '上海常仁',
+			search: {
+				noData:'没有搜索到结果!',
+				paths: 'auto',
+				placeholder: 'Search'
+			},
+			formatUpdated: '{{YY}-{MM}-{DD} {HH}:{mm}:{ss}',
+			plugins: [
+				function(hook, vm) {
+				    hook.beforeEach(function (html) {
+						var url = 'https://github.com/PYfive/docsify/blob/master/' + vm.route.file
+						var editHtml = '[:memo: Edit Document](' + url + ')\n'
+						return html
+							  + '\n----\n'
+							  + '最近一次修改时间 {docsify-updated} '
+							  + editHtml
+					})
+				}
+			]
+		}
+    </script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/ga.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-markdown.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-nginx.min.js"></script>
+	
+	<!--参考本文档的右上角的 GitHub 图标-->
+	<script src="//unpkg.com/docsify" data-repo="your/repo"></script>
+	
+	<!--目录最大展开层级,默认值为 6-->
+	<script src="//unpkg.com/docsify" data-max-level="6"></script>
+	
+	<!--替换节点元素,默认为 #app-->
+    <script src="//unpkg.com/docsify" data-el="#app"></script>
+
+    <!--Sidebar 开关按钮-->
+	<!--设置后 TOC 功能将不可用,适合导航较多的文档,data-sidebar 传入全局变量名-->
+	<script src="//unpkg.com/docsify" data-sidebar-toggle></script>
+
+	<!--读取导航配置文件,如果配置,默认加载当前目录下的 _navbar.md。如果文件不存在,会显示 html 里定义的导航栏-->
+    <!--我有两个文档分别为 README.md 和 guide.md,如果我用 index.html 作为文件名,README.md 可以被正确的渲染因为我们已经规定它为首页文件,但是如果我们访问 my-domain.com/guide 想要得到的结果是 guide.md 的内容,它将无法工作,因为目录下并不存在一个 guide.html 的文件。-->
+	<script src="/lib/docsify.js" data-load-navbar="_navbar.md"></script>
+</body>
+</html>
