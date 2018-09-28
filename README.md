@@ -1,3 +1,6 @@
+# 此套接口文档后期将由代码自动生成,目前已实现,后期还需要优化处理,现在还需要手动写markdown文件
+# 目前这个文档的框架已搭建出来了,后期db/doc栏目将由代码生成
+
 # XX科技 | API接口文档
 
 > C:\software\phpStudy\PHPTutorial\WWW\feelee\docsify_test>docsify serve
@@ -24,7 +27,7 @@
 	   │  ├─changren.md                       数据库名为changren的表结构文件
 	   │  └─tpadmin.md                        数据库名为tpadmin的表结构文件
 	   │	  
-           └─doc                                  Api接口文档存放目录
+       └─doc                                  Api接口文档存放目录
 	      ├─api                               项目1名api
 	      │   ├─category.md                   控制器名category
 	      │   ├─flagship.md                   控制器名flagship
