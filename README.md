@@ -26,17 +26,17 @@
 	   │	  
            └─doc                                  Api接口文档存放目录
 	      ├─api                               项目1名api
-		  │   ├─category.md                   控制器名category
-		  │   ├─flagship.md                   控制器名flagship
-		  │   └─flagshipshopdecorate.md       控制器名flagshipshopdecorate
-		  │  
-		  ├─fli                               项目2名fli
-	          │   ├─category.md
-		  │   ├─flagship.md
-		  │   ├─flagshipshopdecorate.md
-		  │   └─goodsmanage.md
-		  │ 
-		  └─tp5                               项目3名tp5
-		      ├─flagship.md
-		      └─flagshipshopdecorate.md
+	      │   ├─category.md                   控制器名category
+	      │   ├─flagship.md                   控制器名flagship
+	      │   └─flagshipshopdecorate.md       控制器名flagshipshopdecorate
+	      │  
+	      ├─fli                               项目2名fli
+	      │   ├─category.md
+	      │   ├─flagship.md
+	      │   ├─flagshipshopdecorate.md
+	      │   └─goodsmanage.md
+	      │ 
+	      └─tp5                               项目3名tp5
+	          ├─flagship.md
+	          └─flagshipshopdecorate.md
 </code></pre>
