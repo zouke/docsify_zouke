@@ -24,14 +24,14 @@
 	   │  ├─changren.md                       数据库名为changren的表结构文件
 	   │  └─tpadmin.md                        数据库名为tpadmin的表结构文件
 	   │	  
-       └─doc                                  Api接口文档存放目录
+           └─doc                                  Api接口文档存放目录
 	      ├─api                               项目1名api
 		  │   ├─category.md                   控制器名category
 		  │   ├─flagship.md                   控制器名flagship
 		  │   └─flagshipshopdecorate.md       控制器名flagshipshopdecorate
 		  │  
 		  ├─fli                               项目2名fli
-	      │   ├─category.md
+	          │   ├─category.md
 		  │   ├─flagship.md
 		  │   ├─flagshipshopdecorate.md
 		  │   └─goodsmanage.md
