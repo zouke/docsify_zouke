@@ -19,6 +19,8 @@
 
 ## [Github](https://github.com/zouke)
 
+## [禅道](http://122.152.219.178:9080/)
+
 [GitHub](https://github.com/docsifyjs/docsify/)
 [docsify中文文档](https://docsify.js.org/#/zh-cn/)
 [docsify简单教程](https://www.cnblogs.com/CatFish/p/8251044.html)
