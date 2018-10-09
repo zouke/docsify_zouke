@@ -21,6 +21,10 @@
 
 ## [禅道](http://122.152.219.178:9080/)
 
+## [深度学习笔记目录](http://122.152.219.178:2082/)
+
+## [斯坦福大学2014机器学习教程中文笔记目录](http://122.152.219.178:3082/)
+
 [GitHub](https://github.com/docsifyjs/docsify/)
 [docsify中文文档](https://docsify.js.org/#/zh-cn/)
 [docsify简单教程](https://www.cnblogs.com/CatFish/p/8251044.html)
